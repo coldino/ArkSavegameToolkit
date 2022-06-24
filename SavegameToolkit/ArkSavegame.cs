@@ -413,6 +413,7 @@ namespace SavegameToolkit
                     }
                     foreach (var ob in storedGameObjects)
                     {
+                        ob.Parent = cryo;
                         ob.LoadProperties(cryoArchive, new GameObject(), 0);
                     }
 
